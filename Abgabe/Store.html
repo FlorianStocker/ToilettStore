@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toilet-Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<body style="background-color: rgb(239, 239, 239);">
+    <main>
+        <header>
+            <style>
+                .header {
+                    display: flex;
+                    padding: 10px;
+                    margin-left: -10%;
+                    margin-top: -10px;
+                    margin-right: -0.5%;
+                    justify-content: flex-start;
+                    top: auto;
+                    font-size: 10px;
+                    background-color: #ffffff;
+                    align-items: top;
+                }
+
+                .content {
+                    background-color: rgb(239, 239, 239);
+                    font-size: 20px;
+                }
+
+                .hover-text {
+                    font-size: 20px;
+                    color: rgb(169, 169, 169);
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                }
+
+                .hover-text:hover {
+                    color: aquamarine;
+                    transform: scale(1.1);
+                    transform: scaleX(1.15);
+                    text-shadow: 2px 2px 5px rgb(0, 0, 0, 0);
+                    
+                }
+
+                .box {
+                    width: 300px;
+                    height: 310px;
+                    border: 3px solid rgb(0, 0, 0);
+                    flex: 1;
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    text-align: center;
+                    display: inline-block;
+
+                }
+
+
+
+            </style>
+
+            <div class="header">
+                <div style="position: relative;"></div>
+                <a href="Store.html">
+                    <div class="hover-text" style="position: absolute; left: 10%; color: gray; font-size: 30px;" width="70%">Store</div>
+                </a>
+                <a href="Warenkorb.html">
+                    <img src="Bilder/Warenkorb-Store.jpg" style=" position:absolute;  width: 35px; right: 10%;">
+                </a>
+                <img src="Bilder/Warenkorb-Store.jpg" style=" position:relative;  width: 35px; right: 10%;">
+            </div>
+            <div class="content">
+                <h1 style="text-align: center; padding-top: 20px;">Toiletten und Zubehör</h1>
+            </div>
+            
+        <span>
+            <p class="box" style="margin-left: 10%; margin-top: 5%;">
+                    <img src="Bilder/Toilet_1.jpg" style="width: 80%; padding-left: 5%; padding-top: 5%; position: center;">
+                <span>
+                    <a style="padding-bottom: 2.5%; padding-left: 5%;"> DUE 59 Basic ... Preis: 399€</a> 
+                </span>
+                <span style="padding-left: 5%;">
+                    <button onclick="addToCart('DUE 59 Basic', 399)">Zum Warenkorb hinzufügen</button>
+                </span>
+            </p>
+
+            <p class="box" style="margin-left: 10%; margin-top: 5%;">
+                    <img src="Bilder/Toilet_2.webp" style="width: 80%; padding-left: 5%; padding-top: 5%; position: center;">
+                <span>
+                    <a style="padding-bottom: 2.5%; padding-left: 5%;"> Duravit Starck 3 - Preis: 299€</a> 
+                </span>
+                <span style="padding-left: 5%;">
+                    <button onclick="addToCart('Duravit Starck 3', 299)">Zum Warenkorb hinzufügen</button>
+                </span>
+            </p>
+
+            <p class="box" style="margin-left: 10%; margin-top: 5%;">
+                    <img src="Bilder/Toilet_3.webp" style="width: 80%; padding-left: 5%; padding-top: 5%; position: center;">
+                <span>
+                    <a style="padding-bottom: 2.5%; padding-left: 5%;"> Duravit Happy D.2 - Preis: 329€</a> 
+                </span>
+                <span style="padding-left: 5%;">
+                    <button onclick="addToCart('Duravit Happy D.2', 329)">Zum Warenkorb hinzufügen</button>
+                </span>
+            </p>
+
+            <p class="box" style="margin-left: 10%; margin-top: 5%;">
+                    <img src="Bilder/pümpel.jpg" style="width: 80%; padding-left: 5%; padding-top: 5%; position: center;">
+                <span>
+                    <a style="padding-bottom: 2.5%; padding-left: 5%;"> Pömpel - Preis: 7€</a> 
+                </span>
+                <span style="padding-left: 5%;">
+                    <button onclick="addToCart('Pömpel', 7)">Zum Warenkorb hinzufügen</button>
+                </span>
+            </p>
+
+            <p class="box" style="margin-left: 10%; margin-top: 5%;">
+                    <img src="Bilder/Brille.jpg" style="width: 80%; padding-left: 5%; padding-top: 5%; position: center;">
+                <span>
+                    <a style="padding-bottom: 2.5%; padding-left: 5%;"> Klo-Brille - Preis: 49€</a> 
+                </span>
+                <span style="padding-left: 5%;">
+                    <button onclick="addToCart('Klo-Brille', 49)">Zum Warenkorb hinzufügen</button>
+                </span>
+            </p>
+
+            <p class="box" style="margin-left: 10%; margin-top: 5%;">
+                    <img src="Bilder/Klopapier.webp" style="width: 80%; padding-left: 5%; padding-top: 5%; position: center;">
+                <span>
+                    <a style="padding-bottom: 2.5%; padding-left: 5%;"> Klopapier - Preis: 0.50€</a> 
+                </span>
+                <span style="padding-left: 5%;">
+                    <button onclick="addToCart('Klopapier', 0.50)">Zum Warenkorb hinzufügen</button>
+                </span>
+            </p>
+
+            <p class="box" style="margin-left: 10%; margin-top: 5%;">
+                    <img src="Bilder/Klobürste.jpg" style="width: 80%; padding-left: 5%; padding-top: 5%; position: center;">
+                <span>
+                    <a style="padding-bottom: 2.5%; padding-left: 5%;"> Klobürste - Preis: 19€</a> 
+                </span>
+                <span style="padding-left: 5%;">
+                    <button onclick="addToCart('Klobürste', 19)">Zum Warenkorb hinzufügen</button>
+                </span>
+            </p>
+
+            <p class="box" style="margin-left: 10%; margin-top: 5%;">
+                    <img src="Bilder/Toilettenreiniger.jpg" style="width: 80%; padding-left: 5%; padding-top: 5%; position: center;">
+                <span>
+                    <a style="padding-bottom: 2.5%; padding-left: 5%;"> Toilettenreiniger - Preis: 7€</a> 
+                </span>
+                <span style="padding-left: 5%;">
+                    <button onclick="addToCart('Toilettenreiniger', 7)">Zum Warenkorb hinzufügen</button>
+                </span>
+            </p>
+
+            <p class="box" style="margin-left: 10%; margin-top: 5%;">
+                    <img src="Bilder/WC_spüler.jpg" style="width: 80%; padding-left: 5%; padding-top: 5%; position: center;">
+                <span>
+                    <a style="padding-bottom: 2.5%; padding-left: 5%;"> Toiletten Spüler - Preis: 5€</a> 
+                </span>
+                <span style="padding-left: 5%;">
+                    <button onclick="addToCart('Toiletten Spüler', 5)">Zum Warenkorb hinzufügen</button>
+                </span>
+            </p>
+
+
+        </span>
+</body>
+</header>
+
+<body>
+    <script src="Store.js"></script>
+</body>
+
+</html>
