@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toilet-Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<body style="background-color: rgb(239, 239, 239);">
+    <main>
+        <header>
+            <style>
+                .header {
+                    display: flex;
+                    padding: 10px;
+                    margin-left: -10%;
+                    margin-top: -10px;
+                    margin-right: -0.5%;
+                    justify-content: flex-start;
+                    top: auto;
+                    font-size: 10px;
+                    background-color: #ffffff;
+                    align-items: top;
+                }
+
+                .content {
+                    background-color: rgb(239, 239, 239);
+                    font-size: 20px;
+                }
+
+                .hover-text {
+                    font-size: 20px;
+                    color: rgb(199, 199, 199);
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                }
+
+                .hover-text:hover {
+                    color: rgb(75, 75, 75);
+                    transform: scale(1.01);
+                    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
+                }
+
+            </style>
+
+            <div class="header">
+                <div style="position: relative;"></div>
+                <a href="Store.html">
+                    <div class="hover-text" style="position: absolute; left: 10%; color: gray; font-size: 30px;" width="70%">Store</div>
+                </a>
+                <a href="Warenkorb.html">
+                    <img src="Bilder/Warenkorb-Store.jpg" style=" position:absolute;  width: 35px; right: 10%;">
+                </a>
+                <img src="Bilder/Warenkorb-Store.jpg" style=" position:relative;  width: 35px; right: 10%;">
+            </div>
+
+            <div>
+                <h2>Warenkorb</h2>
+                <ul id="cart"></ul>
+                <button onclick="clearCart()">Warenkorb leeren</button>
+
+                <script src="script.js"></script>
+            </div>
+            
+</body>
+</header>
+
+<body>
+    <script src="Store.js"></script>
+</body>
+
+</html>
